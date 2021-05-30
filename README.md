@@ -1,5 +1,5 @@
 # challenges
-repository with my challenges and writeups i wrote
+repository with my challenges and writeups
 
 ## Watchers pwn2win 2020
 
