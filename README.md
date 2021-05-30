@@ -20,3 +20,5 @@ repository with my challenges and writeups
 **Solves:** 16
 
 **First Blood:** More Smoked Leet Chicken
+
+**Write-up:** Under Construction
