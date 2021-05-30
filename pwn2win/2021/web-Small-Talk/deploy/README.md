@@ -21,7 +21,7 @@ In order to get the flag through cookies you must run it with HTTPS to set cooki
 
 To solve this challenge submit to the bot your page with the following code:
 
-```
+```HTML
 <!--
 Pwn2win 2021 Small Talk solution
 step 1: race condition in postMessage
