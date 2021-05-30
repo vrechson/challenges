@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  small-talk:
+    build: ./small-talk
+    ports:
+      - 1337:5000
+    restart: always
+    networks:
+    - NETcake
+
+  ademir:
+    build: ./ademir
+    restart: unless-stopped
+    privileged: true
+    environment: # Pass environment variables to the service
+      PORT: 3000
+      BASEURL: https://small-talk:1337/
+      STAY: 3
+      FLAG: CTF-BR{everything-1s-a-d4mn-fuck1ng-gadget}
+    networks:
+      - NETcake
+
+
+networks:
+  NETcake:
+    driver: "bridge"
+    ipam:
+      config:
+        - subnet: 172.29.2.0/24
