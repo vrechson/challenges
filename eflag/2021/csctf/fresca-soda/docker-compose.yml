@@ -1,0 +1,41 @@
+version: "3"
+
+services:
+  backend:
+    build: backend
+    environment:
+      - PORT=5000
+      - FLAG=CSCTF{ONLY-A-TRUE-HERO-COULD-GET-IN-HERE-LOL}
+    networks:
+      - backend-poc1
+
+  haproxy:
+    build: haproxy
+    ports:
+      - "1080:1080"
+    links:
+      - "backend"
+    depends_on:
+      - backend
+    environment:
+      - SERVER_HOSTNAME=backend
+      - SERVER_PORT=5000
+    networks:
+      - backend-poc1
+
+  ademir:
+    build:
+        context: ./ademir
+        dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+    - haproxy
+    networks:
+    - backend-poc1
+
+networks:
+  backend-poc1:
+    driver: "bridge"
+    ipam:
+      config:
+        - subnet: 172.29.0.0/24

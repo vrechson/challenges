@@ -1,7 +1,6 @@
-# challenges
-repository to store my challenges and writeups
+# Pwn2win CTF
 
-## Small Talk pwn2win 2021
+## Small Talk (2021)
 
 **Description:** Take a little break in your journey, read some of our extravagant knowledgement to become your best version...
 
@@ -13,7 +12,7 @@ repository to store my challenges and writeups
 
 **Write-up:** https://lemonslab.me/posts/small-talk-writeup/
 
-## Watchers pwn2win 2020
+## Watchers (2020)
 
 **Description:** Welcome to Static Web Host! During all these years of static website development, Rebellious Fingers found out that the biggest hole in our security is the use of insecure third-party applications. To help our members mitigate this problem, and not be compromised by our enemies, we decided to implement a third-party app to help them identify which technologies their pages are running so they can check whether there is anything vulnerable before deployment.
 
