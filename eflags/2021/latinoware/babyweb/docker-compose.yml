@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  babyweb:
+    build: ./babyweb
+    ports:
+      - 11337:80
+    restart: always
+    networks:
+    - NETcake
+
+  ademir:
+    build: ./ademir
+    restart: unless-stopped
+    privileged: true
+    environment: # Pass environment variables to the service
+      PORT: 3000
+      BASEURL: http://babyweb/
+      STAY: 3
+      FLAG: LW2021{-easyflag}
+    networks:
+      - NETcake
+
+
+networks:
+  NETcake:
+    driver: "bridge"
+    ipam:
+      config:
+        - subnet: 172.29.111.0/24
