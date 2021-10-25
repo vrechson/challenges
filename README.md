@@ -27,4 +27,4 @@ repository to store my challenges and writeups
 
 # Eflags
 
-**Index for my eflags challanges:** https://github.com/vrechson/challenges/tree/master/eflag
+**Index for my eflags challanges:** https://github.com/vrechson/challenges/tree/master/eflags
