@@ -1,5 +1,3 @@
-# Eflag
-
 ## Fresca Soda (csctf-2021)
 
 **Description (portuguese):** Os cientistas da Igreja do Coletivo andam desconfiando que a Vought International mandou seus herois para descobrirem a formula secreta do seu sucesso internacional Fresca Soda.
@@ -10,7 +8,7 @@ Como retaliação, a Igreja pediu a voce que validasse a possibilidade de alguma
 
 **First Blood:** -
 
-**Write-up (portuguese):** https://0xten.gitbook.io/public/clearsale-ctf/2021/fresca-soda
+**Write-up (english):** https://0xten.gitbook.io/public/clearsale-ctf/2021/fresca-soda
 
 ## Baby web (lw-2021)
 
